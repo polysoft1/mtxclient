@@ -37,7 +37,7 @@ static const std::array olmErrorStrings{
 
 };
 
-OlmErrorCode
+mtx::crypto::OlmErrorCode
 olm_exception::ec_from_string(std::string_view error)
 {
         for (size_t i = 0; i < olmErrorStrings.size(); i++) {
